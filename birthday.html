@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عيد ميلاد حبوبتي ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#000,#320028);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+h1{
+font-size:55px;
+color:#ff4d88;
+margin:10px;
+}
+
+h2{
+font-size:30px;
+margin:15px;
+}
+
+p{
+font-size:22px;
+line-height:2;
+max-width:800px;
+}
+
+button{
+padding:18px 40px;
+font-size:22px;
+border:none;
+border-radius:40px;
+background:#ff2d55;
+color:white;
+cursor:pointer;
+margin-top:30px;
+}
+
+img{
+width:300px;
+max-width:90%;
+border-radius:20px;
+margin:20px;
+box-shadow:0 0 25px rgba(255,255,255,.2);
+}
+
+.section{
+padding:80px 20px;
+}
+
+.heart{
+position:fixed;
+color:#ff4d88;
+animation:up 6s linear infinite;
+}
+
+@keyframes up{
+0%{transform:translateY(100vh);opacity:0;}
+100%{transform:translateY(-100vh);opacity:1;}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>🎂 Happy Birthday</h1>
+
+<h2>إلى حبوبتي ❤️</h2>
+
+<p>
+كل سنة وإنتِ أجمل نعمة ربنا رزقني بيها.
+النهارده الدنيا كلها بتحتفل بأجمل بنت في حياتي.
+أتمنى تفضلي دايمًا سعيدة، وربنا يحققلك كل أحلامك،
+وأفضل أشوف ضحكتك منورة حياتي طول العمر.
+🤍
+</p>
+
+<button onclick="document.getElementById('love').scrollIntoView({behavior:'smooth'})">
+💖 افتحي رسالتي
+</button>
+
+</div>
+
+<div class="section" id="love">
+
+<h1>💌 رسالة من قلبي</h1>
+
+<p>
+هنا هنحط الرسالة الطويلة اللي كتبناهالك بعدين ❤️
+</p>
+
+</div>
+
+<script>
+for(let i=0;i<60;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=(3+Math.random()*5)+"s";
+document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
