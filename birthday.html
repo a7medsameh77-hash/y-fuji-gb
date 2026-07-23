@@ -120,13 +120,29 @@ animation:up 6s linear infinite;
 
 <h2>إلى حبوبتي ❤️</h2>
 
-<p>
-كل سنة وإنتِ أجمل نعمة ربنا رزقني بيها.
-النهارده الدنيا كلها بتحتفل بأجمل بنت في حياتي.
-أتمنى تفضلي دايمًا سعيدة، وربنا يحققلك كل أحلامك،
-وأفضل أشوف ضحكتك منورة حياتي طول العمر.
-🤍
-</p>
+<p id="message"></p>
+
+<script>
+const text = `كل سنة وإنتِ أجمل نعمة ربنا رزقني بيها يا حبوبتي ❤️
+
+النهارده مش مجرد عيد ميلاد، ده اليوم اللي الدنيا نورت فيه بوجودك.
+
+بحبك حب أكبر من أي كلام، ونفسي ربنا يجمعنا بالحلال ونعيش العمر كله سوا.
+
+كل سنة وإنتِ نور عيني وأغلى إنسانة في حياتي. ❤️`;
+
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("message").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 40);
+  }
+}
+
+typeWriter();
+      </script>
 
 <button onclick="document.getElementById('love').scrollIntoView({behavior:'smooth'})">
 💖 افتحي رسالتي
