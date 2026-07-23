@@ -135,7 +135,18 @@ animation:up 6s linear infinite;
 </div>
 
 <div class="section" id="love">
+<h2 id="loveCounter"></h2>
 
+<script>
+const startDate = new Date("2026-03-31");
+const today = new Date();
+
+const diff = today - startDate;
+const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+document.getElementById("loveCounter").innerHTML =
+"❤️ بقالنا مع بعض " + days + " يوم ❤️";
+  </script>
 <h1>💌 رسالة من قلبي</h1>
 
 <p>
