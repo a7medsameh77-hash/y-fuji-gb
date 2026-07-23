@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+
+<style>
+body{
+margin:0;
+padding:0;
+background:linear-gradient(135deg,#000,#1a001f);
+color:white;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+overflow:hidden;
+}
+
+h1{
+font-size:50px;
+margin:0;
+color:#ff4d6d;
+}
+
+h2{
+font-size:30px;
+margin:15px 0;
+}
+
+p{
+font-size:20px;
+width:90%;
+max-width:600px;
+margin:auto;
+line-height:1.8;
+color:#ddd;
+}
+
+button{
+margin-top:30px;
+padding:15px 40px;
+font-size:22px;
+border:none;
+border-radius:50px;
+background:#ff2d55;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.heart{
+position:absolute;
+font-size:25px;
+animation:up 6s linear infinite;
+}
+
+@keyframes up{
+0%{transform:translateY(100vh);opacity:0;}
+100%{transform:translateY(-100vh);opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<div>
+<h1>🎂 Happy Birthday</h1>
+<h2>إلى حبوبتي ❤️</h2>
+
+<p>
+كل سنة وإنتِ أجمل حاجة حصلتلي.
+ربنا يخليكي ليا ويفرح قلبك دايمًا،
+وعقبال ما نحتفل بعيد ميلادك الجاي وإحنا في بيت واحد بالحلال. 🤍
+</p>
+
+<button onclick="alert('بحبك يا حبوبتي ❤️')">
+💖 افتحي المفاجأة
+</button>
+
+</div>
+
+<script>
+for(let i=0;i<30;i++){
+let h=document.createElement("div");
+h.innerHTML="❤️";
+h.className="heart";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=(3+Math.random()*4)+"s";
+document.body.appendChild(h);
+}
+</script>
+
+</body>
+</html>
