@@ -6,7 +6,88 @@
 <title>عيد ميلاد حبوبتي ❤️</title>
 
 <style>
-body{
+<script>
+function fireworks(){
+
+for(let i=0;i<80;i++){
+
+let f=document.createElement("div");
+
+f.innerHTML="✨";
+f.style.position="fixed";
+f.style.left=Math.random()*100+"vw";
+f.style.top=Math.random()*100+"vh";
+f.style.fontSize=(15+Math.random()*30)+"px";
+f.style.animation="boom 2s ease forwards";
+
+document.body.appendChild(f);
+
+setTimeout(()=>{
+f.remove();
+},2000);
+
+}
+
+}
+
+setTimeout(fireworks,1000);
+
+
+for(let i=0;i<50;i++){
+
+let heart=document.createElement("div");
+
+heart.innerHTML="❤️";
+heart.style.position="fixed";
+heart.style.left=Math.random()*100+"vw";
+heart.style.bottom="-20px";
+heart.style.fontSize="25px";
+heart.style.animation="heartUp 5s linear infinite";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+
+<style>
+
+@keyframes boom{
+
+0%{
+transform:scale(0);
+opacity:1;
+}
+
+100%{
+transform:scale(3);
+opacity:0;
+}
+
+}
+
+
+@keyframes heartUp{
+
+0%{
+transform:translateY(0);
+opacity:0;
+}
+
+50%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-110vh);
+opacity:0;
+}
+
+}
+
+</style>
+  body{
 margin:0;
 font-family:Arial,sans-serif;
 background:linear-gradient(135deg,#000,#320028);
